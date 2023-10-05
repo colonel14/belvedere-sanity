@@ -1,0 +1,261 @@
+.latest__news .app__section-left,
+.news__details .app__section-left {
+  padding-right: 4rem;
+}
+
+.secondary__hero {
+  background: #f5f7f9;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.app__section-wrapper {
+  padding: 4rem 0;
+}
+.secondary__hero-inner {
+  display: flex;
+  align-items: center;
+}
+
+.secondary__hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #44508d;
+  line-height: 40px;
+  flex: 1;
+}
+
+.secondary__hero p {
+  font-size: 18px;
+  line-height: 33px;
+  font-family: Helvetica;
+  flex: 3;
+  border-left: 2px solid #0f213f;
+  padding: 20px 30px 20px 88px;
+}
+
+.events .filters {
+  max-width: 24vw;
+}
+
+.filters {
+  max-width: 60vw;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+.app__input-withIcon {
+  width: 100%;
+  position: relative;
+}
+.app__input-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: #0f213f;
+  right: 0;
+  top: 10px;
+}
+.select__input {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  background: none;
+  border: 0;
+  outline: 0;
+  border-bottom: 1.5px solid #0f213f;
+  margin-bottom: 30px;
+  border-radius: 0;
+  color: #ccd1d9;
+  text-align: left;
+  font-size: 16px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+}
+
+.news__card {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  align-items: center;
+
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e2e2;
+}
+.news__card:last-of-type {
+  border-bottom: 0;
+}
+
+.news__card-img {
+  position: relative;
+  height: 269px;
+}
+
+.news__card-info {
+  padding: 30px 30px;
+}
+.news__card-category {
+  background: #65d2de;
+  color: #fff;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Palatino;
+}
+
+.news__card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #191919;
+  margin-bottom: 5px;
+}
+.news__card-details {
+  color: #9a9a9a;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+
+  font-family: Helvetica;
+}
+
+.news__card-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #191919;
+}
+
+/* Details Page */
+.details__page-hero {
+  position: relative;
+  height: 500px;
+}
+
+.news__details .details__page-inner {
+  text-align: left;
+}
+
+.details__page-inner {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.details__page-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #44508d;
+  margin-bottom: 10px;
+}
+.details__page-date {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #191919;
+  font-size: 18px;
+  font-weight: 300;
+}
+.news__details .details__page-date {
+  justify-content: flex-start;
+}
+.details__page-content {
+  margin-top: 3rem;
+}
+
+.related__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #0f213f;
+  font-family: Palatino;
+  margin-bottom: 30px;
+}
+
+.related__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.related__card-img {
+  position: relative;
+  height: 205px;
+}
+.related__card-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.related__card-details {
+  font-size: 12px;
+  line-height: 19px;
+  color: #757575;
+  font-family: Helvetica;
+}
+
+@media screen and (max-width: 1024px) {
+  .related__news {
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .secondary__hero-inner {
+    display: block;
+  }
+  .secondary__hero {
+    height: 500px;
+  }
+  .filters {
+    max-width: 100%;
+  }
+  .secondary__hero h1 {
+    max-width: 200px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0f213f;
+  }
+  .secondary__hero p {
+    border: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .news__card {
+    grid-template-columns: 1fr;
+  }
+  .news__card-info {
+    padding: 30px 15px;
+  }
+  .news__card-title {
+    font-size: 20px;
+  }
+  .news__card-details {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .news__card-date {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .filters {
+    display: block;
+    margin-bottom: 5rem;
+  }
+}

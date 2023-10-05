@@ -1,0 +1,66 @@
+.protals__page {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  height: 100vh;
+}
+
+.portals__page-left {
+  padding: 4rem 80px;
+}
+.portals__logo {
+  margin: 0 auto;
+}
+
+.portals__form {
+  margin-top: 8rem;
+}
+
+.app__input {
+  margin-bottom: 50px;
+}
+.submit__button {
+  border: 1px solid #2b52aa;
+  color: #2b52aa;
+  width: 90px;
+  height: 37px;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+
+.submit__button:hover {
+  background: #2b52aa;
+  color: #fff;
+}
+
+.portals__link {
+  margin-top: 2rem;
+}
+.portals__link a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #2b52aa;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.portals__text {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: Helvetica;
+}
+
+@media screen and (max-width: 1200px) {
+  .portals__page-left {
+    padding: 4rem 2rem;
+  }
+}
