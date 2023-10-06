@@ -7,9 +7,7 @@ import School from "@/components/HomeComponents/School";
 import Footer from "@/components/Footer";
 import HomeAdmissions from "@/components/HomeComponents/HomeAdmissions";
 
-
 async function Home() {
-
   return (
     <div id="homepage">
       <Navbar />

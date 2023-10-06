@@ -6,7 +6,12 @@ export const pagequery = groq`
   }
 
 `;
+export const pageSlugquery = groq`
+    *[_type == 'page' && slug == $slug][0] {
+    ..., 
+  }
 
+`;
 export const newsquery = groq`
 *[_type == 'post' && $category in categories[]->slug.current] | order(publishedAt desc, _createdAt desc) {
   ..., 

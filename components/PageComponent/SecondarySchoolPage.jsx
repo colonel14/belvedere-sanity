@@ -1,4 +1,3 @@
-
 import PageHero from "../PageHero";
 import PageLinksList from "../PageLinksList";
 import Heading from "../Heading";
@@ -7,9 +6,9 @@ import { lifeLearningLinks } from "@/data";
 import React from "react";
 import { PortableHeading } from "../portableHeading";
 import { PortableText } from "../portabletext";
+import urlFor from "@/lib/urlFor";
 
-function SecondarySchoolPage({result}) {
-
+function SecondarySchoolPage({ result }) {
   const list = [
     {
       name: "English",
@@ -73,7 +72,10 @@ function SecondarySchoolPage({result}) {
   return (
     <div>
       <PageHero
-        imageSrc="/secondary-school-hero.jpg"
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) ||
+          "/secondary-school-hero.jpg"
+        }
         title={
           <>
             Secondary <br /> School
@@ -87,8 +89,8 @@ function SecondarySchoolPage({result}) {
           <div className="app__section-inner">
             <div className="flex flex-col-reverse lg:grid lg:grid-cols-12">
               <div className="col-span-9 app__section-left">
-              {result?.components?.map((block, i) => {
-                   switch (block._type) {
+                {result?.components?.map((block, i) => {
+                  switch (block._type) {
                     case "heading":
                       return (
                         <React.Fragment key={i}>

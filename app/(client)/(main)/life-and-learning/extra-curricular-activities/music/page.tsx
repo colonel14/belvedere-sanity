@@ -3,10 +3,7 @@ import "@/styles/single-page.css";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 
-const MusicPage = dynamic(
-  () => import("@/components/PageComponent/MusicPage"),
-  { ssr: false }
-);
+const MusicPage = dynamic(() => import("@/components/PageComponent/MusicPage"));
 
 export const metadata: Metadata = {
   title: "Music",

@@ -8,6 +8,7 @@ import { lifeLearningLinks } from "@/data";
 import React from "react";
 import { PortableHeading } from "../portableHeading";
 import { PortableText } from "../portabletext";
+import urlFor from "@/lib/urlFor";
 
 function PrimaryStagePage({ result }) {
   const list = [
@@ -56,7 +57,10 @@ function PrimaryStagePage({ result }) {
   return (
     <div>
       <PageHero
-        imageSrc="/primary-stage-hero.jpg"
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) ||
+          "/primary-stage-hero.jpg"
+        }
         title={
           <>
             Primary <br /> Stage

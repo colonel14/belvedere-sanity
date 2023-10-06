@@ -9,6 +9,7 @@ import React from "react";
 import GridList from "../GridList";
 import { PortableHeading } from "../portableHeading";
 import { PortableText } from "../portabletext";
+import urlFor from "@/lib/urlFor";
 
 const linksList = [
   {
@@ -29,7 +30,10 @@ function PrimaryWelcomePage({ result }) {
   return (
     <div>
       <PageHero
-        imageSrc="/primary-welcome-hero.jpg"
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) ||
+          "/primary-welcome-hero.jpg"
+        }
         title="Primary Head’s Welcome"
         color="#046A38"
       />

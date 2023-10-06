@@ -8,6 +8,7 @@ import GridList from "../GridList";
 import React from "react";
 import { PortableText } from "../portabletext";
 import { PortableHeading } from "../portableHeading";
+import urlFor from "@/lib/urlFor";
 
 const linksList = [
   {
@@ -47,7 +48,10 @@ function ValuesAndEthosPage({ result }) {
   return (
     <div>
       <PageHero
-        imageSrc="/values-and-ethos-hero.jpg"
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) ||
+          "/values-and-ethos-hero.jpg"
+        }
         title={
           <>
             Values <br /> and Ethos

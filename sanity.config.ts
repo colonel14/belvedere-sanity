@@ -11,6 +11,7 @@ import { colorInput } from "@sanity/color-input";
 import { apiVersion, dataset, projectId } from "./sanity/env";
 import { schema } from "./sanity/schema";
 import { myStructure } from "./deskStructure";
+// import { defaultDocumentNode } from "./sanity/lib/defaultDocumentNode";
 
 export default defineConfig({
   name: "Belvedere_School",
@@ -23,6 +24,7 @@ export default defineConfig({
   plugins: [
     deskTool({
       structure: myStructure,
+      // defaultDocumentNode,
     }),
     colorInput(),
     // Vision is a tool that lets you query your content with GROQ in the studio

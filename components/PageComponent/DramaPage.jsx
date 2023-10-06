@@ -8,6 +8,7 @@ import React from "react";
 import GridList from "../GridList";
 import { PortableHeading } from "../portableHeading";
 import { PortableText } from "../portabletext";
+import urlFor from "@/lib/urlFor";
 
 const linksList = [
   {
@@ -27,7 +28,14 @@ const linksList = [
 function DramaPage({ result }) {
   return (
     <div>
-      <PageHero imageSrc="/drama-hero.jpg" title="Drama" color="#FB491C" />
+      <PageHero
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) ||
+          "/drama-hero.jpg"
+        }
+        title="Drama"
+        color="#FB491C"
+      />
       <section className="app__section">
         <div className="container">
           <div className="app__section-inner">

@@ -8,6 +8,7 @@ import { lifeLearningLinks } from "@/data";
 import React from "react";
 import { PortableText } from "../portabletext";
 import { PortableHeading } from "../portableHeading";
+import urlFor from "@/lib/urlFor";
 
 const linksList = [
   {
@@ -63,7 +64,10 @@ function TeachingMethodologyPage({ result }) {
   return (
     <div>
       <PageHero
-        imageSrc="/teaching-methodology-hero.jpg"
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) ||
+          "/teaching-methodology-hero.jpg"
+        }
         title="Teaching Methodology"
         color="#046A38"
       />

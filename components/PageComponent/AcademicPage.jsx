@@ -4,6 +4,7 @@ import Image from "next/image";
 import PageHero from "../PageHero";
 import Section from "../Section";
 import KnowMore from "../KnowMore";
+import urlFor from "@/lib/urlFor";
 
 const linksList = [
   {
@@ -23,7 +24,13 @@ const linksList = [
 function AcademicPage({ result }) {
   return (
     <div>
-      <PageHero imageSrc="/hero-1.jpg" title="Academic" color="#C33734" />
+      <PageHero
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) || "/hero-1.jpg"
+        }
+        title="Academic"
+        color="#C33734"
+      />
       <Section data={result} />
       <Image
         src="/footer-img.jpg"

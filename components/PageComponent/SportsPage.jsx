@@ -10,6 +10,7 @@ import GridList from "../GridList";
 import Heading from "../Heading";
 import { PortableHeading } from "../portableHeading";
 import { PortableText } from "../portabletext";
+import urlFor from "@/lib/urlFor";
 
 const linksList = [
   {
@@ -33,7 +34,14 @@ const linksList = [
 function SportsPage({ result }) {
   return (
     <div>
-      <PageHero imageSrc="/sports-hero.jpg" title="Sports" color="#6AC45B" />
+      <PageHero
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) ||
+          "/sports-hero.jpg"
+        }
+        title="Sports"
+        color="#6AC45B"
+      />
       <section className="app__section">
         <div className="container">
           <div className="app__section-inner">

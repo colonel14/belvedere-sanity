@@ -8,6 +8,7 @@ import GridList from "../GridList";
 import Heading from "../Heading";
 import { PortableHeading } from "../portableHeading";
 import { PortableText } from "../portabletext";
+import urlFor from "@/lib/urlFor";
 
 const linksList = [
   {
@@ -28,7 +29,10 @@ function ArtAndDesignPage({ result }) {
   return (
     <div>
       <PageHero
-        imageSrc="/art-design-hero.jpg"
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) ||
+          "/art-design-hero.jpg"
+        }
         title={
           <>
             Art & <br /> Design

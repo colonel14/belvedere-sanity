@@ -1,46 +1,65 @@
+import PageHero from "./PageHero";
+import PageLinksList from "./PageLinksList";
+import { aboutUsLinks } from "@/data";
+import Heading from "./Heading";
 import Image from "next/image";
-import PageHero from "../PageHero";
-import KnowMore from "../KnowMore";
-import PageLinksList from "../PageLinksList";
-import { lifeLearningLinks } from "@/data";
+import KnowMore from "./KnowMore";
+import GridList from "./GridList";
 import React from "react";
-import GridList from "../GridList";
-import Heading from "../Heading";
-import { PortableHeading } from "../portableHeading";
-import { PortableText } from "../portabletext";
-import urlFor from "@/lib/urlFor";
+import { PortableText } from "./portabletext";
+import { PortableHeading } from "./portableHeading";
 
 const linksList = [
   {
-    name: "Music",
-    href: "/life-and-learning/extra-curricular-activities/music",
+    name: "Primary Head’s Welcome",
+    href: "/about-us/primary-head-welcome",
   },
   {
-    name: "Drama",
-    href: "/life-and-learning/extra-curricular-activities/drama",
+    name: "Our History",
+    href: "/about-us/our-history",
   },
   {
-    name: "Art & Design",
-    href: "/life-and-learning/extra-curricular-activities/art-and-design",
+    name: "Vision & Mission",
+    href: "/about-us/vision-and-mission",
   },
 ];
 
-function TripsPage({ result }) {
+function PageComponent({ result }) {
+  const list = [
+    {
+      name: "Synergy.",
+      bgColor: "#FFCB47",
+    },
+    {
+      name: "Integrity.",
+      bgColor: "#FF9BC2",
+    },
+    {
+      name: "Respect.",
+      bgColor: "#8BCCCF",
+    },
+    {
+      name: "Growth.",
+      bgColor: "#041E42",
+    },
+  ];
+
   return (
     <div>
       <PageHero
-        imageSrc={
-          (result?.heroImg && urlFor(result?.heroImg).url()) ||
-          "/trips-hero.jpg"
+        imageSrc="/values-and-ethos-hero.jpg"
+        title={
+          <>
+            Values <br /> and Ethos
+          </>
         }
-        title="Trips"
         color="#65D2DE"
       />
       <section className="app__section">
         <div className="container">
           <div className="app__section-inner">
             <div className="flex flex-col-reverse lg:grid lg:grid-cols-12">
-              <div className="col-span-9 app__section-left">
+              <div className="col-span-8 app__section-left">
                 {result?.components?.map((block, i) => {
                   switch (block._type) {
                     case "heading":
@@ -93,15 +112,39 @@ function TripsPage({ result }) {
                   }
                 })}
               </div>
-              <div className="col-span-3 app__section-right">
-                <PageLinksList links={lifeLearningLinks} />
+              <div className="col-span-4 app__section-right">
+                <PageLinksList links={aboutUsLinks} />
+                <div className="words__square">
+                  <h4 className="words__square-title">
+                    Be Bold. Be Brave. Be...
+                  </h4>
+                  <div className="words__square-list">
+                    <p className="">Benevolent</p>
+                    <p className="">Exceptional</p>
+                    <p className="">Loyal</p>
+                    <p className="">Visionary</p>
+                    <p className="">Exemplary</p>
+                    <p className="">Disciplined</p>
+                    <p className="">Empowering</p>
+                    <p className="">Reflective</p>
+                    <p className="">Ethical</p>
+                  </div>
+                </div>
+                <div className="sidebar__text">
+                  We encourage our pupils to be the best versions of themselves,
+                  not second-rate versions of others.
+                </div>
+                <div className="sidebar__text">
+                  By giving them high quality education, they can become whoever
+                  they aspire to be.
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <Image
-        src="/trips-footer.jpg"
+        src="/values-and-ethos-footer.jpg"
         width={100}
         height={100}
         className="w-full h-[245px] lg:h-[495px] object-cover grayscale"
@@ -113,4 +156,4 @@ function TripsPage({ result }) {
   );
 }
 
-export default TripsPage;
+export default PageComponent;

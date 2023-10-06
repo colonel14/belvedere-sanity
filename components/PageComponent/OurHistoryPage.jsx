@@ -8,6 +8,7 @@ import React from "react";
 import GridList from "../GridList";
 import { PortableHeading } from "../portableHeading";
 import { PortableText } from "../portabletext";
+import urlFor from "@/lib/urlFor";
 
 const linksList = [
   {
@@ -28,7 +29,10 @@ function OurHistoryPage({ result }) {
   return (
     <div>
       <PageHero
-        imageSrc="/our-history-hero.jpg"
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) ||
+          "/our-history-hero.jpg"
+        }
         title="Our History"
         color="#FFB842"
       />

@@ -31,7 +31,9 @@
     "components/*.jsx",
     "app/(client)/services/page.jsx",
     "tina/config.ts",
-    "hooks/useDebounce.js"
+    "hooks/useDebounce.js",
+    "app/api/preview/route.ts",
+    "app/api/exit-preview/route.ts"
   ],
   "exclude": ["node_modules"]
 }

@@ -5,8 +5,7 @@ import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 
 const SportsPage = dynamic(
-  () => import("@/components/PageComponent/SportsPage"),
-  { ssr: false }
+  () => import("@/components/PageComponent/SportsPage")
 );
 
 export const metadata: Metadata = {

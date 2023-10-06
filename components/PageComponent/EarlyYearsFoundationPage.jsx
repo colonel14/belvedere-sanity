@@ -8,6 +8,7 @@ import { lifeLearningLinks } from "@/data";
 import React from "react";
 import { PortableHeading } from "../portableHeading";
 import { PortableText } from "../portabletext";
+import urlFor from "@/lib/urlFor";
 
 function EarlyYearsFoundationPage({ result }) {
   const list = [
@@ -46,7 +47,10 @@ function EarlyYearsFoundationPage({ result }) {
   return (
     <div>
       <PageHero
-        imageSrc="/early-years-hero.jpg"
+        imageSrc={
+          (result?.heroImg && urlFor(result?.heroImg).url()) ||
+          "/early-years-hero.jpg"
+        }
         title={
           <>
             Early Years <br />

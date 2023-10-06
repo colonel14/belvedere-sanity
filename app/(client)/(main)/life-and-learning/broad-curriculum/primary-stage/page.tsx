@@ -4,8 +4,7 @@ import { Metadata } from "next";
 import dynamic from "next/dynamic";
 
 const PrimaryStagePage = dynamic(
-  () => import("@/components/PageComponent/PrimaryStagePage"),
-  { ssr: false }
+  () => import("@/components/PageComponent/PrimaryStagePage")
 );
 
 export const metadata: Metadata = {

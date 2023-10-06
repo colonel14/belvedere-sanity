@@ -3,9 +3,10 @@ import "@/styles/single-page.css";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 
+export const revalidate = 60;
+
 const VisionAndMissionPage = dynamic(
-  () => import("@/components/PageComponent/VisionAndMissionPage"),
-  { ssr: false }
+  () => import("@/components/PageComponent/VisionAndMissionPage")
 );
 
 export const metadata: Metadata = {

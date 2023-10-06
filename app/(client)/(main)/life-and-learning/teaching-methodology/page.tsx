@@ -4,8 +4,7 @@ import { Metadata } from "next";
 import dynamic from "next/dynamic";
 
 const TeachingMethodologyPage = dynamic(
-  () => import("@/components/PageComponent/TeachingMethodologyPage"),
-  { ssr: false }
+  () => import("@/components/PageComponent/TeachingMethodologyPage")
 );
 
 export const metadata: Metadata = {
