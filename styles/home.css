@@ -169,7 +169,7 @@
 .home__life .container {
   height: 100%;
 }
-.home__life-heading{
+.home__life-heading {
   position: relative;
 }
 .home__life-heading::before {
@@ -231,6 +231,10 @@
   padding: 100px 0;
   overflow: hidden;
 }
+.home__school-in {
+  margin: 0 2rem;
+  overflow: hidden;
+}
 .home__school-heading {
   max-width: 1000px;
   margin: 0 auto 60px;
@@ -258,7 +262,7 @@
   margin: 0 0 0 auto;
   padding-left: 2rem;
 }
-.home__school-slider .home__school-swiper{
+.home__school-slider .home__school-swiper {
   overflow: visible;
 }
 .school_slider-controls {
@@ -266,7 +270,7 @@
   align-items: center;
   gap: 10px;
   justify-content: flex-end;
-  margin-top: -26px;
+  margin-top: -15px;
   position: relative;
   z-index: 10;
 }
@@ -280,8 +284,30 @@
   color: #fb491c;
   border: 1px solid #fb491c;
   border-radius: 50%;
+  transition: all 0.4s;
+}
+.slider__controls-button:hover {
+  background: #fb491c;
+  color: #fff;
 }
 
+.slider__controls-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.slider__controls-wrapper .swiper-scrollbar {
+  position: relative;
+  background: #ccd1d9;
+  height: 2px;
+  cursor: pointer;
+}
+.slider__controls-wrapper .swiper-scrollbar-drag {
+  background-color: #fb491c;
+  height: 3px;
+  border-radius: 10px;
+  position: relative;
+}
 .home__school-swiper .swiper-pagination-progressbar {
   top: unset;
   bottom: 0;
@@ -376,7 +402,14 @@
   border: 1px solid #0f213f;
   color: #0f213f;
   border-radius: 45px;
+  transition: all 0.4s;
 }
+
+.home__admissions-links .admission__link:hover {
+  background: #0f213f;
+  color: #fff;
+}
+
 .admission__link .admission__link-title {
   font-size: 20px;
   font-weight: 700;
@@ -396,8 +429,8 @@
   top: -10px;
 }
 
-@media screen and (max-width: 1440px){
-  .home__life-heading::before{
+@media screen and (max-width: 1440px) {
+  .home__life-heading::before {
     left: -2rem;
     width: 175px;
   }
@@ -451,7 +484,6 @@
     position: relative;
   }
   .home__life-heading::before {
-
     max-width: 330px;
     height: 15vh;
   }
@@ -477,8 +509,12 @@
   .home__admissions-image {
     height: 282px;
   }
+
+  .home__school-in {
+    margin: 0 1rem;
+  }
   .home__school-slider {
-    padding: 0 0 0 1rem;
+    padding: 0;
   }
   .slide__title {
     font-size: 25px;

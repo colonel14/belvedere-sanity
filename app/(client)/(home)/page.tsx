@@ -14,7 +14,7 @@ async function Home() {
       <HomeHero />
       <HomeHistory />
       <HomeLifeAndLearning />
-      {/* <School {...result} /> */}
+      <School />
       <HomeAdmissions />
       <Footer />
     </div>

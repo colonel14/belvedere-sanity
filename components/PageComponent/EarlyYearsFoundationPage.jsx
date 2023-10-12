@@ -1,5 +1,3 @@
-"use client";
-
 import PageHero from "../PageHero";
 import PageLinksList from "../PageLinksList";
 import Heading from "../Heading";
