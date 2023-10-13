@@ -100,7 +100,7 @@ function School() {
                   }}
                 >
                   {sliderList.map((slide, idx) => (
-                    <React.Fragment key={idx}>
+                    <React.Fragment key={slide._id}>
                       {slide?.title && slide?.image && slide?.description && (
                         <SwiperSlide>
                           <div className="slide__item">

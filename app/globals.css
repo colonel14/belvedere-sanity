@@ -8,23 +8,24 @@
   box-sizing: border-box;
 }
 
-/* @font-face {
-  font-family: "Helvetica";
-  src: url("../fonts/Helvetica-Roman.ttf");
-} */
 @font-face {
   font-family: "Helvetica";
+  src: url("/fonts/Helvetica.ttf");
+  font-weight: 400;
+}
+/* @font-face {
+  font-family: "Helvetica";
   src: url("https://candyfonts.com/wp-data/2022/03/10/125411/AGHELV_N.ttf")
-      format("woff"),
+      format("ttf"),
     url("https://candyfonts.com/wp-data/2022/03/10/125411/AGHELV_N.ttf")
       format("opentype"),
     url("https://candyfonts.com/wp-data/2022/03/10/125411/AGHELV_N.ttf")
       format("truetype");
-}
+} */
 
 @font-face {
   font-family: "Palatino";
-  src: url("../fonts/Palatino.ttf");
+  src: url("/fonts/Palatino.ttf");
 }
 
 @layer base {
@@ -172,6 +173,11 @@ body {
   line-height: 23px;
   text-transform: uppercase;
   color: #6ac45b;
+  transition: all 0.4s;
+}
+.app__button:hover {
+  background: #6ac45b;
+  color: #fff;
 }
 
 .file__input {

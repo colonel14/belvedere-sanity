@@ -97,6 +97,18 @@ const Navbar = () => {
     {
       title: "Admissions",
       href: "/",
+      sublinks: [
+        [
+          {
+            title: "Apply Now",
+            href: "/",
+          },
+          {
+            title: "Admissions Process",
+            href: "/admission-process",
+          },
+        ],
+      ],
     },
     {
       title: "News & Events",
