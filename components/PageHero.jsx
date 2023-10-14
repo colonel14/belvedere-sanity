@@ -1,15 +1,6 @@
-"use client";
-
-import { cn } from "@/lib/utils";
 import Image from "next/image";
-import AOS from "aos";
-import { useEffect } from "react";
 
 function PageHero({ imageSrc, color, title, data, query }) {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className="app__hero">
       <div className="container">

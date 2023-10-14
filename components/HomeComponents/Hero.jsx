@@ -13,6 +13,8 @@ function HomeHero() {
         fill
         className="home__hero-img object-cover"
         alt="hero image"
+        loading="eager"
+        priority={true}
         unoptimized
       />
       <div className="container">
