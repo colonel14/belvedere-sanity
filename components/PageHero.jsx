@@ -12,6 +12,7 @@ function PageHero({ imageSrc, color, title, data, query }) {
               alt="hero image"
               unoptimized
               className="object-cover"
+              loading="eager"
               priority
             />
           </div>
