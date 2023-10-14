@@ -581,6 +581,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 9px;
+  row-gap: 70px;
   margin-bottom: 100px;
 }
 
