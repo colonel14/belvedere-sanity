@@ -20,11 +20,11 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(180deg, #ffffff00 0%, #ffffff 100%); */
-  background: url("/home-linear.png");
+  background: linear-gradient(180deg, #ffffff00 0%, #ffffff 100%);
+  /* background: url("/home-linear.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   z-index: 2;
 }
 
@@ -166,23 +166,34 @@
 
 .home__life {
   position: relative;
-  height: 90vh;
+  height: 800px;
   margin-top: 100px;
   overflow: hidden;
 }
 .home__life .container {
+  position: relative;
   height: 100%;
 }
 .home__life-heading {
   position: relative;
 }
+.home__life .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 96%;
+  height: 247px;
+  width: 100vw;
+  background: #6ac45b;
+  z-index: -1;
+}
 .home__life-heading::before {
   content: "";
   position: absolute;
   bottom: 75%;
-  left: -20vw;
-  height: 21vh;
-  width: 28vw;
+  left: 0;
+  height: 353px;
+  width: 150px;
   background: #6ac45b;
   z-index: -1;
 }
@@ -261,9 +272,9 @@
 }
 
 .home__school-slider {
-  max-width: 104rem;
+  max-width: 90rem;
   width: 100%;
-  margin: 0 0 0 auto;
+  margin: 0 auto;
   padding-left: 2rem;
 }
 .home__school-slider .home__school-swiper {
@@ -371,7 +382,7 @@
   background: #f5f7f9;
 }
 .home__admissions-info {
-  padding: 100px 40px;
+  padding: 100px 28px;
 }
 .home__admissions-heading {
   margin-bottom: 20px;
@@ -397,12 +408,14 @@
   row-gap: 20px;
 }
 .home__admissions-links .admission__link {
-  width: 260px;
+  flex: 1;
+  min-width: 260px;
+  max-width: 270px;
   height: 76px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 55px;
+  justify-content: space-between;
+  padding: 10px 25px;
   border: 1px solid #0f213f;
   color: #0f213f;
   border-radius: 45px;
@@ -435,9 +448,14 @@
 
 @media screen and (max-width: 1440px) {
   .home__life-heading::before {
-    left: -2rem;
     width: 175px;
+    left: -2rem;
   }
+  .home__life .container::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 1300px) {
 }
 @media screen and (max-width: 991px) {
   .home__hero-content {
@@ -477,9 +495,11 @@
   .home__life {
     height: auto;
   }
+
   .home__life-inner {
     display: flex;
     flex-direction: column-reverse;
+    gap: 150px;
   }
   .home__life::before {
     display: none;
@@ -489,7 +509,7 @@
   }
   .home__life-heading::before {
     max-width: 330px;
-    height: 15vh;
+    height: 18vh;
   }
 
   .home__life-image {
