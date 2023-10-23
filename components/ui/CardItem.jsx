@@ -2,9 +2,13 @@
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
 
 function CardItem({ item }) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [isHovered, setIsHovered] = useState(false);
 
   return (

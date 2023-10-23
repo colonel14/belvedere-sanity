@@ -2,7 +2,6 @@ import "@/styles/single-page.css";
 import dynamic from "next/dynamic";
 import { Metadata } from "next";
 import { getPage } from "@/lib/client";
-
 const AcademicPage = dynamic(
   () => import("@/components/PageComponent/AcademicPage")
 );

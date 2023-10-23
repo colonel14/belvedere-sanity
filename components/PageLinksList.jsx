@@ -33,7 +33,6 @@ function PageLinksList({ links = [] }) {
   return (
     <div className="page__info-list">
       <h5 className="page__list-title">Explore this section</h5>
-
       <ul>
         {links.map((item) => (
           <li key={item.href}>

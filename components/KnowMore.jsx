@@ -9,7 +9,7 @@ function KnowMore({ linksList = [] }) {
         <div className="app__section-inner">
           <div className="know__more-inner">
             <div>
-              <h4 className="know__more-title">Know More</h4>
+              <h4 className="know__more-title">Discover More</h4>
             </div>
             <div className="know__more-links">
               {linksList.map((item) => (

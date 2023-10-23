@@ -10,6 +10,5 @@ import PageComponent from "./PageComponent";
 export default function PreviewPage({ page, title }: any) {
   const [data] = useLiveQuery(page, pagequery, { title });
 
-  console.log(data);
   return <PageComponent result={data} />;
 }
