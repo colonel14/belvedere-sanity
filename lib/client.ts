@@ -12,7 +12,7 @@ import { client } from "./sanity.client";
 
 export async function getPage(title: string) {
   return (
-    (await client.fetch(pagequery, { title }, {next: {revalidate: 10}})) || {}
+    (await client.fetch(pagequery, { title }, { cache: "no-store" })) || {}
   );
 }
 
