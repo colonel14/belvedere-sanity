@@ -76,23 +76,7 @@ function VisionAndMissionPage({ result }) {
                           </div>
                         </React.Fragment>
                       );
-                    case "contentText":
-                      return (
-                        <React.Fragment key={i}>
-                          <PortableText value={block.body} />
-                        </React.Fragment>
-                      );
-                    case "grid":
-                      return (
-                        <React.Fragment key={i}>
-                          <div>
-                            <GridList
-                              columnsCount={block.columnsCount}
-                              list={block.gridList || list}
-                            />
-                          </div>
-                        </React.Fragment>
-                      );
+
                     default:
                       return null;
                   }
@@ -100,38 +84,42 @@ function VisionAndMissionPage({ result }) {
 
                 <div className="mt-12">
                   <h5 className="vision__heading">Our vision</h5>
-                  <p className="page__text">
-                    Our vision is to cultivate a dynamic international learning
-                    environment that fosters creativity, academic excellence,
-                    social-emotional learning, resilience, agility, and social
-                    responsibility, empowering pupils to positively contribute
-                    to their communities while anticipating future demands and
-                    preserving cultural heritage
-                  </p>
+                  {result?.components?.map((block, i) => {
+                    switch (block._type) {
+                      case "contentText":
+                        return (
+                          i == 1 && (
+                            <React.Fragment key={i}>
+                              <PortableText value={block.body} />
+                            </React.Fragment>
+                          )
+                        );
+
+                      default:
+                        return null;
+                    }
+                  })}
                 </div>
                 <div className="mt-12">
                   <h5 className="mission__heading">Our mission</h5>
-                  <p className="page__text">
-                    Our mission is to provide a transformative education that
-                    empowers pupils to excel academically, thrive personally,
-                    and contribute positively to society.
-                  </p>
-                  <p className="page__text">
-                    Through a holistic approach, we foster a love for learning,
-                    nurturing their intellectual curiosity and critical thinking
-                    skills. We embrace and celebrate the unique talents and
-                    diverse backgrounds of our pupils, fostering an inclusive
-                    and respectful community. With a future-focused mindset, we
-                    equip our pupils with the knowledge, skills, and
-                    adaptability required for success in an ever-changing world.
-                  </p>
-                  <p className="page__text">
-                    Guided by strong values and a commitment to character
-                    development, we instill in our pupils a sense of
-                    responsibility, integrity, and compassion.
-                  </p>
+                  {result?.components?.map((block, i) => {
+                    switch (block._type) {
+                      case "contentText":
+                        return (
+                          i == 2 && (
+                            <React.Fragment key={i}>
+                              <PortableText value={block.body} />
+                            </React.Fragment>
+                          )
+                        );
+
+                      default:
+                        return null;
+                    }
+                  })}
                 </div>
               </div>
+
               <div className="col-span-4 app__section-right">
                 <PageLinksList links={aboutUsLinks} />
               </div>

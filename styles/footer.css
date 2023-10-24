@@ -50,12 +50,11 @@ footer {
   text-transform: uppercase;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   row-gap: 0;
 }
 
 .footer__contact-links a strong {
-  width: 52px;
 }
 
 .footer__socials {

@@ -1,3 +1,4 @@
+import { getPage } from "@/lib/client";
 import "@/styles/single-page.css";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
@@ -11,9 +12,10 @@ export const metadata: Metadata = {
   title: "About Us",
 };
 export default async function AboutUs() {
+  const result = await getPage("About Us");
   return (
     <main>
-      <AboutUsPage />
+      <AboutUsPage result={result} />
     </main>
   );
 }

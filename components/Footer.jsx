@@ -47,14 +47,20 @@ function Footer() {
             </p>
             <ul className="footer__contact-links">
               <li>
-                <Link href="http://maps.google.com/?q=cairo-SuezRoad,AcrossMadinaty&SARAI,Cairo,Egypt.">
-                  <strong>Address</strong>{" "}
-                  cairo-SuezRoad,AcrossMadinaty&SARAI,Cairo,Egypt.
+                <Link href="http://maps.google.com/?q=GATE 9, Building 4-4-10, SODIC EAST, New Cairo." target="blank">
+                  <strong> ADMISSIONS OFFICE: </strong>
+                  GATE 9, Building 4-4-10, SODIC EAST, New Cairo
                 </Link>
               </li>
               <li>
-                <Link href="tel:+201070000353">
-                  <strong>Phone</strong> +20 10 70000 353
+                <Link href="http://maps.google.com/?q=Cairo-Suez Road, Across from Madinaty 4 and Sarai, Cairo, Egypt" target="blank">
+                  <strong>CAMPUS ADDRESS: </strong>
+                  Cairo-Suez Road, Across from Madinaty 4 and Sarai, Cairo, Egypt
+                </Link>
+              </li>
+              <li>
+                <Link href="tel:+201070549003">
+                  <strong>Phone</strong> +20 1070549003
                 </Link>
               </li>
               <li>

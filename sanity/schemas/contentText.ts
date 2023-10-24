@@ -11,7 +11,6 @@ export default defineType({
       title: "Section Title",
       type: "string",
       initialValue: "Content Block",
-      readOnly: true,
     }),
     defineField({
       name: "body",
@@ -20,10 +19,19 @@ export default defineType({
       of: [
         {
           type: "block",
-          styles: [{ title: "Normal", value: "normal" }],
+          styles: [
+            { title: "Normal", value: "normal" },
+            { title: "H1", value: "h1" },
+            { title: "H2", value: "h2" },
+            { title: "H3", value: "h3" },
+            { title: "H4", value: "h4" },
+          ],
           lists: [],
           marks: {
-            decorators: [],
+            decorators: [
+              { title: "Strong", value: "strong" },
+              { title: "Emphasis", value: "em" },
+            ],
           },
         },
       ],

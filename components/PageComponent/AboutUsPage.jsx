@@ -1,12 +1,13 @@
-"use client";
-
 import PageHero from "../PageHero";
 import CardsList from "../CardsList";
 import PageLinksList from "../PageLinksList";
 import { aboutUsLinks } from "@/data";
 import Heading from "../Heading";
+import React from "react";
+import { PortableText } from "../portabletext";
+import { PortableHeading } from "../portableHeading";
 
-function AboutUsPage() {
+function AboutUsPage({ result }) {
   const list = [
     {
       image: "/welcome-img.jpg",
@@ -49,26 +50,49 @@ function AboutUsPage() {
           <div className="app__section-inner">
             <div className="flex flex-col-reverse lg:grid lg:grid-cols-12">
               <div className="col-span-8 app__section-left">
-                <div className="heading__bloquote">
-                  <Heading
-                    title="education is life itself."
-                    subtitle="Education is not preparation for life;"
-                    titleColor="#65D2DE"
-                    subtitleColor="#65D2DE"
-                  />
-                  <span>- John Dewey</span>
-                </div>
-                <p className="page__text">
-                  The Belvedere Preparatory School was originally founded in
-                  1880 as the Junior Department of The Belvedere School,
-                  Liverpool. Originally housed at 17 Belvidere Road, we moved to
-                  our current premises at 23 Belvidere Road in 1939. It is
-                  widely recognised as one of the best Independent Schools in
-                  Liverpool. The Belvedere Preparatory School is an Independent
-                  Co-Educational School, for pupils aged 3-11 years. Our School
-                  is housed in a beautiful Victorian mansion which is located in
-                  a historically rich area of Liverpool.{" "}
-                </p>
+                {result?.components?.map((block, i) => {
+                  switch (block._type) {
+                    case "heading":
+                      return i > 0 ? (
+                        <div className="secondary__heading" key={i}>
+                          <div className="section__heading">
+                            <Heading
+                              title={
+                                <PortableHeading value={block.headingTitle} />
+                              }
+                              titleColor={block.headingTitleColor.hex}
+                              subtitle={block.headingSubtitle}
+                              subtitleColor={block?.headingSubtitleColor?.hex}
+                            />
+                          </div>
+                        </div>
+                      ) : (
+                        <React.Fragment key={i}>
+                          <div className="heading__bloquote">
+                            <Heading
+                              title={
+                                <PortableHeading value={block.headingTitle} />
+                              }
+                              titleColor={block.headingTitleColor.hex}
+                              subtitle={block.headingSubtitle}
+                              subtitleColor={block?.headingSubtitleColor?.hex}
+                            />
+                            <span>- John Dewey</span>
+                          </div>
+                        </React.Fragment>
+                      );
+                    case "contentText":
+                      return (
+                        <React.Fragment key={i}>
+                          <PortableText value={block.body} />
+                        </React.Fragment>
+                      );
+
+                    default:
+                      return null;
+                  }
+                })}
+
                 <div className="mt-20">
                   <CardsList list={list} />
                 </div>
