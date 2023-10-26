@@ -116,6 +116,67 @@
   line-height: 33px;
 }
 
+.home__apply {
+  margin-top: 100px;
+}
+.home__apply .app__button {
+  margin: 0;
+  background: #65d2de;
+  border-color: #65d2de;
+  color: #fff;
+  font-size: 23px;
+  padding: 20px 38px;
+}
+
+.home__apply .app__button:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #0f213f;
+}
+
+.home__apply-in {
+  position: relative;
+  background: #0f213f;
+  padding: 12rem 4rem;
+  display: flex;
+  overflow: hidden;
+  /* border-radius: 0 87px 0 0; */
+}
+.home__apply-pattern {
+  max-width: 45.2%;
+  margin-left: auto;
+  right: 3px !important;
+  top: 3px !important;
+}
+.home__apply-heading {
+  margin-bottom: 20px;
+}
+.home__apply-info {
+  flex-basis: 50%;
+}
+.home__apply-heading > span {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+}
+.home__apply-heading h3 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.home__apply-heading h3 span:first-of-type {
+  font-size: 47px;
+}
+
+.home__apply-heading h3 span:last-of-type {
+  font-size: 54px;
+}
 .home__history .section__button {
   color: #2b52aa;
 }
@@ -518,6 +579,25 @@
     margin-top: 5rem;
   }
 
+  .home__apply-in {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  .home__apply-info {
+    padding: 12rem 4rem;
+    text-align: center;
+  }
+  .home__apply .app__button {
+    margin: 30px auto 0;
+  }
+  .home__apply-pattern {
+    position: relative !important;
+
+    max-width: 99%;
+    max-height: 382px;
+    margin: 0 auto;
+  }
+
   .home__school-swiper .swiper-slide {
     width: 560px;
   }
@@ -571,5 +651,25 @@
   }
   .home__hero-content .hero__text {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .home__apply-heading h3 span:first-of-type {
+    font-size: 38px;
+  }
+  .home__apply-heading h3 span:last-of-type {
+    font-size: 44px;
+  }
+  .home__apply-heading > span {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .home__apply-info {
+    padding: 8rem 2rem;
+  }
+  .home__apply-pattern {
+    max-height: 193px;
   }
 }

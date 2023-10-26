@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ChevronRight, Menu, X } from "lucide-react";
 import Link from "next/link";
 import MobileMenuItem from "./MobileMenuItem";
+import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -113,38 +114,38 @@ const Navbar = () => {
     {
       title: "News & Events",
       href: "/",
-      sublinks: [
-        [
-          {
-            title: "Latest News",
-            href: "/latest-news",
-          },
-          {
-            title: "Events",
-            href: "/events",
-          },
-        ],
-      ],
+      // sublinks: [
+      //   [
+      //     {
+      //       title: "Latest News",
+      //       href: "/latest-news",
+      //     },
+      //     {
+      //       title: "Events",
+      //       href: "/events",
+      //     },
+      //   ],
+      // ],
     },
     {
       title: "Portals",
       href: "/",
-      sublinks: [
-        [
-          {
-            title: "Pupils",
-            href: "/portals/pupils",
-          },
-          {
-            title: "Parents",
-            href: "/portals/parents",
-          },
-          {
-            title: "Staff",
-            href: "/portals/staff",
-          },
-        ],
-      ],
+      // sublinks: [
+      //   [
+      //     {
+      //       title: "Pupils",
+      //       href: "/portals/pupils",
+      //     },
+      //     {
+      //       title: "Parents",
+      //       href: "/portals/parents",
+      //     },
+      //     {
+      //       title: "Staff",
+      //       href: "/portals/staff",
+      //     },
+      //   ],
+      // ],
     },
   ];
 
@@ -166,7 +167,10 @@ const Navbar = () => {
           </div>
           <ul className="app__navbar-links">
             {navigation.map((item, idx) => (
-              <li className="app__navbar-link" key={idx}>
+              <li
+                className={cn("app__navbar-link", item.sublinks && "has-links")}
+                key={idx}
+              >
                 <Link href={item.href}>{item.title}</Link>
                 {item.sublinks && (
                   <div className="menu__sub">

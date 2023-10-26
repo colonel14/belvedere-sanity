@@ -104,9 +104,9 @@ footer {
     justify-content: center;
   }
   .footer__contact-links a {
-    max-width: 450px;
+    max-width: 100%;
     margin: 0 auto;
-    text-align: left;
+    justify-content: center;
   }
   .footer__socials {
     margin: 3rem 0 0 0;

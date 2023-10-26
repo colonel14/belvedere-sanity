@@ -96,9 +96,11 @@ function ValuesAndEthosPage({ result }) {
                       );
                     case "contentText":
                       return (
-                        <React.Fragment key={i}>
-                          <PortableText value={block.body} />
-                        </React.Fragment>
+                        i == 1 && (
+                          <React.Fragment key={i}>
+                            <PortableText value={block.body} />
+                          </React.Fragment>
+                        )
                       );
 
                     default:
@@ -123,6 +125,20 @@ function ValuesAndEthosPage({ result }) {
                             />
                           </div>
                         </React.Fragment>
+                      );
+                    default:
+                      return null;
+                  }
+                })}
+                {result?.components?.map((block, i) => {
+                  switch (block._type) {
+                    case "contentText":
+                      return (
+                        i > 1 && (
+                          <React.Fragment key={i}>
+                            <PortableText value={block.body} />
+                          </React.Fragment>
+                        )
                       );
                     default:
                       return null;

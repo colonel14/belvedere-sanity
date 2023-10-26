@@ -20,7 +20,8 @@
   min-height: 316px;
 }
 .card__link-box-image img {
-  min-height: 316px;
+  /* min-height: 316px; */
+  min-height: 390px;
 }
 .card__link-box-info {
   padding: 30px 40px;

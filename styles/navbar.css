@@ -39,7 +39,12 @@
   cursor: pointer;
   line-height: 18px;
 }
-.app__navbar-links li:hover {
+.app__navbar-links .app__navbar-link:not(.has-links) {
+  pointer-events: none;
+}
+
+.app__navbar-links .app__navbar-link.has-links:hover,
+.app__navbar-links .menu__sub li:hover {
   color: #2b52aa;
 }
 .app__navbar-links li:hover .menu__sub {
@@ -99,7 +104,7 @@
   line-height: 22px;
   text-transform: none;
 }
-.app__navbar-links:hover .app__navbar-bottom_menu {
+.app__navbar-link.has-links:hover ~ .app__navbar-bottom_menu {
   opacity: 1;
   pointer-events: all;
 }
@@ -164,7 +169,7 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .app__navbar-links:before {
+  .app__navbar-link:before {
     position: fixed;
     top: 0;
     left: 0;
@@ -177,7 +182,7 @@
     opacity: 0;
     visibility: hidden;
   }
-  .app__navbar-links:hover:before {
+  .app__navbar-link.has-links:hover:before {
     opacity: 1;
     visibility: visible;
   }

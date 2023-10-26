@@ -31,7 +31,7 @@ function HomeHero() {
               of all learners.
             </p>
             <Link href="/" className="app__button">
-              Register Now <ChevronRight />
+              Apply Now <ChevronRight />
             </Link>
           </div>
         </div>

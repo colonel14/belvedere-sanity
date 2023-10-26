@@ -11,10 +11,10 @@ function AboutUsPage({ result }) {
   const list = [
     {
       image: "/welcome-img.jpg",
-      title: "A Broad Curriculum",
+      title: "Primary Head’s Welcome",
       description:
         "At Belvedere School, Cairo, we are eager to create an environment that produces well-rounded learners prepared for the challenges of today’s fast-paced world. Our school community is made up of and belongs to our pupils and...",
-      href: "/about-us/academic",
+      href: "/about-us/primary-head-welcome",
       color: "#046A38",
     },
     {
@@ -36,6 +36,18 @@ function AboutUsPage({ result }) {
         "Our vision is to cultivate a dynamic international learning environment that fosters creativity, academic excellence, social-emotional learning, resilience, agility, and social responsibility, empowering pupils to positively contribute...",
       href: "/about-us/vision-and-mission",
       color: "#FB491C",
+    },
+    {
+      image: "/values-and-ethos-hero.jpg",
+      title: (
+        <>
+          Values <br /> And Ethos
+        </>
+      ),
+      description:
+        "Our ethos creates a supportive and inclusive environment, nurturing holistic student development.We prioritize belonging, respect, and empathy, valuing and supporting each individual.Collaboration is key; students, teachers, and parents form a cohesive community.",
+      href: "/about-us/values-and-ethos",
+      color: "#65D2DE",
     },
   ];
   return (
