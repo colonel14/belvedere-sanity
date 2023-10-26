@@ -48,7 +48,7 @@ function HomeAdmissions() {
               >
                 <span>
                   <span className="admission__link-title">primary</span>
-                  <span className="admission__link-grade">Y1 - Y5</span>
+                  <span className="admission__link-grade">Y1 - Y6</span>
                 </span>
                 <ChevronRight />
               </Link>

@@ -102,7 +102,7 @@ const Navbar = () => {
         [
           {
             title: "Apply Now",
-            href: "/",
+            href: "https://lms.belvedereschoolcairo.com/en/applicantregister/register",
           },
           {
             title: "Admissions Process",
@@ -197,7 +197,7 @@ const Navbar = () => {
 
             <ul className="app__navbar-bottom_menu">
               <li>
-                <Link href="/">Our prospectus</Link>
+                <Link href="/Belvedere School, Cairo _ School Prospectus [Digital].pdf" target="blank">Our prospectus</Link>
               </li>
             </ul>
           </ul>

@@ -130,7 +130,7 @@ function AdmissionProcessPage() {
                 </div>
               ))}
             </div>
-            <Link href="/" className="app__button">
+            <Link href="https://lms.belvedereschoolcairo.com/en/applicantregister/register"  className="app__button">
               Apply Now <ChevronRight />
             </Link>
           </div>

@@ -3,7 +3,6 @@ import HomeHero from "@/components/HomeComponents/Hero";
 import Navbar from "@/components/Navbar";
 import HomeHistory from "@/components/HomeComponents/HomeHistory";
 import HomeLifeAndLearning from "@/components/HomeComponents/HomeLifeAndLearning";
-import School from "@/components/HomeComponents/School";
 import Footer from "@/components/Footer";
 import HomeAdmissions from "@/components/HomeComponents/HomeAdmissions";
 import Link from "next/link";
@@ -37,7 +36,7 @@ async function Home() {
                   Academic year <br /> 2024/2025
                 </span>
               </div>
-              <Link href="/" className="app__button">
+              <Link href="https://lms.belvedereschoolcairo.com/en/applicantregister/register" className="app__button">
                 Apply Now
               </Link>
             </div>
@@ -46,7 +45,6 @@ async function Home() {
           </div>
         </div>
       </div>
-      {/* <School /> */}
       <HomeAdmissions />
       <Footer />
     </div>

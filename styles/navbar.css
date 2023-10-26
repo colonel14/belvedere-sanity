@@ -96,6 +96,7 @@
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
+  width: 100%;
 }
 .app__navbar-bottom_menu li a {
   color: #2b52aa;
@@ -103,6 +104,8 @@
   font-weight: 500;
   line-height: 22px;
   text-transform: none;
+  display: block;
+
 }
 .app__navbar-link.has-links:hover ~ .app__navbar-bottom_menu {
   opacity: 1;
