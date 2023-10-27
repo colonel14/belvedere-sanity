@@ -24,6 +24,7 @@ async function Home() {
               src="/pattern.svg"
               className="object-cover object-top home__apply-pattern"
               alt="pattern"
+              unoptimized
             />
 
             <div className="home__apply-info">
@@ -36,12 +37,13 @@ async function Home() {
                   Academic year <br /> 2024/2025
                 </span>
               </div>
-              <Link href="https://lms.belvedereschoolcairo.com/en/applicantregister/register" className="app__button">
+              <Link
+                href="https://lms.belvedereschoolcairo.com/en/applicantregister/register"
+                className="app__button"
+              >
                 Apply Now
               </Link>
             </div>
-
-            <div className="home__apply-pattern"></div>
           </div>
         </div>
       </div>

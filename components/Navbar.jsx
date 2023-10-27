@@ -197,7 +197,12 @@ const Navbar = () => {
 
             <ul className="app__navbar-bottom_menu">
               <li>
-                <Link href="/Belvedere School, Cairo _ School Prospectus [Digital].pdf" target="blank">Our prospectus</Link>
+                <Link
+                  href="/Belvedere School, Cairo _ School Prospectus [Digital].pdf"
+                  target="blank"
+                >
+                  Our prospectus
+                </Link>
               </li>
             </ul>
           </ul>
@@ -216,6 +221,14 @@ const Navbar = () => {
                   {navigation.map((item, idx) => (
                     <MobileMenuItem link={item} key={idx} />
                   ))}
+                  <li>
+                    <Link
+                      href="/Belvedere School, Cairo _ School Prospectus [Digital].pdf"
+                      target="blank"
+                    >
+                      Our prospectus
+                    </Link>
+                  </li>
                 </ul>
               </div>
             )}

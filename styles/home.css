@@ -143,6 +143,7 @@
   /* border-radius: 0 87px 0 0; */
 }
 .home__apply-pattern {
+  position: absolute;
   max-width: 45.2%;
   margin-left: auto;
   right: 3px !important;

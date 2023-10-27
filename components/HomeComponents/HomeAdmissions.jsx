@@ -14,6 +14,7 @@ function HomeAdmissions() {
               className="object-cover"
               fill
               alt="admissions placeholder"
+              unoptimized
             />
           </div>
           <div className="home__admissions-info">
@@ -21,7 +22,7 @@ function HomeAdmissions() {
               <span>Admissions</span>
               <h3>
                 <span className="text__underline">Join us </span>
-                at Belvedere <br /> school cairo
+                at Belvedere <br /> school, Cairo
               </h3>
             </div>
             <p className="main__text">
