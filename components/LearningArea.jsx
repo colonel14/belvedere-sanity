@@ -7,7 +7,7 @@ function LearningArea({ title, list = [] }) {
           <div
             key={idx}
             className="learning__area-box"
-            style={{ backgroundColor: item.color.hex }}
+            style={{ backgroundColor: item?.color.hex }}
           >
             {item.title}
           </div>

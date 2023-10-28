@@ -66,16 +66,29 @@ function EarlyYearsFoundationPage({ result }) {
                 {result?.components?.map((block, i) => {
                   switch (block._type) {
                     case "heading":
-                      return (
+                      return i > 0 ? (
+                        <div className="secondary__heading" key={i}>
+                          <div className="section__heading">
+                            <Heading
+                              title={
+                                <PortableHeading value={block.headingTitle} />
+                              }
+                              titleColor={block?.headingTitleColor?.hex}
+                              subtitle={block.headingSubtitle}
+                              subtitleColor={block?.headingSubtitleColor?.hex}
+                            />
+                          </div>
+                        </div>
+                      ) : (
                         <React.Fragment key={i}>
                           <div className="section__heading">
                             <Heading
                               title={
                                 <PortableHeading value={block.headingTitle} />
                               }
-                              titleColor={block.headingTitleColor.hex}
+                              titleColor={block?.headingTitleColor?.hex}
                               subtitle={block.headingSubtitle}
-                              subtitleColor={block.headingSubtitleColor.hex}
+                              subtitleColor={block?.headingSubtitleColor?.hex}
                             />
                           </div>
                         </React.Fragment>

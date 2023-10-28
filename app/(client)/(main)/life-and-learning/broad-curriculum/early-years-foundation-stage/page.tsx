@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default async function EarlyYearsFoundation() {
-  const result = await getPage("Early Years Foundation");
+  const result = await getPage("Early Years");
 
   return (
     <main>
