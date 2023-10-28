@@ -671,6 +671,6 @@
     padding: 8rem 2rem;
   }
   .home__apply-pattern {
-    max-height: 193px;
+    height: 193px !important;
   }
 }
