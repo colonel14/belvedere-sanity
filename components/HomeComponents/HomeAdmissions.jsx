@@ -22,7 +22,7 @@ function HomeAdmissions() {
               <span>Admissions</span>
               <h3>
                 <span className="text__underline">Join us </span>
-                at Belvedere <br /> school, Cairo
+                at Belvedere <br /> School, Cairo
               </h3>
             </div>
             <p className="main__text">
