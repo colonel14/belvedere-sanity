@@ -1,4 +1,4 @@
-import { getPage } from "@/lib/client";
+import { getPage, getPageDynamic } from "@/lib/client";
 import "@/styles/single-page.css";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Values and Ethos",
 };
 export default async function VisionAndMission() {
-  const result = await getPage("Values and Ethos");
+  const result = await getPageDynamic("Values and Ethos");
   return (
     <main>
       <ValuesAndEthosPage result={result} />
