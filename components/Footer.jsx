@@ -7,7 +7,7 @@ function Footer() {
       <footer>
         <div id="footer__top">
           <div className="footer__top-row">
-            <div className="footer__heading">Hot links</div>
+            <div className="footer__heading">Quick links</div>
             <div className="footer__links">
               <ul className="footer__links-column">
                 <li>
@@ -40,7 +40,7 @@ function Footer() {
             </div>
           </div>
           <div className="footer__top-row">
-            <div className="footer__heading">Find us</div>
+            <div className="footer__heading">Contact us</div>
             <p className="footer__text">
               If you would like to speak to somebody in person about your
               child’s application, contact us on any of the following:
@@ -48,30 +48,36 @@ function Footer() {
             <ul className="footer__contact-links">
               <li>
                 <Link
-                  href="http://maps.google.com/?q=GATE 9, Building 4-4-10, SODIC EAST, New Cairo."
+                  href="http://maps.google.com/?q=SODIC Eastown, Beside the AUC, Road 90, New Cairo"
                   target="blank"
                 >
                   <strong> ADMISSIONS OFFICE: </strong>
-                  GATE 9, Building 4-4-10, SODIC EAST, New Cairo
+                  SODIC Eastown, Beside the AUC, Road 90, New Cairo - Gate 9 -
+                  Building 4, 4th Floor, Office 04-04-10.
                 </Link>
               </li>
               <li>
                 <Link
-                  href="http://maps.google.com/?q=Cairo-Suez Road, Opposite Madinaty & SARAI, Cairo, Egypt."
+                  href="http://maps.google.com/?q=CCAIRO-SUEZ ROAD, OPPOSITE TO MADINATY & SARAI, CAIRO, EGYPT. "
                   target="blank"
                 >
                   <strong>CAMPUS ADDRESS: </strong>
-                  Cairo-Suez Road, Opposite Madinaty & SARAI, Cairo, Egypt.
+                  CAIRO-SUEZ ROAD, OPPOSITE TO MADINATY & SARAI, CAIRO, EGYPT.
                 </Link>
               </li>
               <li>
                 <Link href="tel:+201070549003">
-                  <strong>Phone</strong> +20 1070549003
+                  <strong>ADMISSIONS: </strong> +201070549003/4
                 </Link>
               </li>
               <li>
-                <Link href="mailto:enquiries@belvedereschoolcairo.com">
-                  <strong>Email</strong> enquiries@belvedereschoolcairo.com
+                <Link href="tel:+201070000353">
+                  <strong>FRONT DESK: </strong> +201070000353
+                </Link>
+              </li>
+              <li>
+                <Link href="mailto:ENQUIRIES@BELVEDERESCHOOLCAIRO.COM">
+                  <strong>Email: </strong> ENQUIRIES@BELVEDERESCHOOLCAIRO.COM
                 </Link>
               </li>
             </ul>
