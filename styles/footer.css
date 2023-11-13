@@ -42,7 +42,8 @@ footer {
   margin-bottom: 5px;
 }
 
-.footer__contact-links a {
+.footer__contact-links a,
+.footer__contact-links span {
   font-size: 12px;
   font-weight: 500;
   line-height: 22px;

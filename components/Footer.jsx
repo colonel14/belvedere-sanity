@@ -66,9 +66,16 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="tel:+201070549003">
-                  <strong>ADMISSIONS: </strong> +201070549003/4
-                </Link>
+                <span href="tel:+201070549003">
+                  <strong>ADMISSIONS: </strong>{" "}
+                  <Link href="tel:+201070549003" className=" !inline-block">
+                    +201070549003
+                  </Link>{" "}
+                  -{" "}
+                  <Link href="tel:+201070549004" className=" !inline-block">
+                    +201070549004
+                  </Link>
+                </span>
               </li>
               <li>
                 <Link href="tel:+201070000353">
@@ -83,7 +90,7 @@ function Footer() {
             </ul>
           </div>
           <div className="footer__top-row footer__socials">
-            <Link href="/">
+            <Link href="https://www.facebook.com/belvedereschools">
               <Image
                 width={24}
                 height={24}
@@ -91,7 +98,7 @@ function Footer() {
                 alt="facebook icon"
               />
             </Link>
-            <Link href="/">
+            <Link href="https://www.instagram.com/belvedereschool/">
               <Image
                 width={24}
                 height={24}
