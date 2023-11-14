@@ -106,7 +106,7 @@ function Footer() {
                 alt="instagram icon"
               />
             </Link>
-            <Link href="/">
+            <Link href="https://www.linkedin.com/company/belvedereschool/">
               <Image
                 width={24}
                 height={24}
@@ -114,7 +114,7 @@ function Footer() {
                 alt="linkedin icon"
               />
             </Link>
-            <Link href="/">
+            <Link href="https://www.youtube.com/@belvedereschoo">
               <Image
                 width={24}
                 height={24}
