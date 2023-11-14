@@ -114,7 +114,7 @@ function Footer() {
                 alt="linkedin icon"
               />
             </Link>
-            <Link href="https://www.youtube.com/@belvedereschoo">
+            <Link href="https://www.youtube.com/@belvedereschools">
               <Image
                 width={24}
                 height={24}
