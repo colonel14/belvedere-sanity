@@ -58,7 +58,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  href="http://maps.google.com/?q=CCAIRO-SUEZ ROAD, OPPOSITE TO MADINATY & SARAI, CAIRO, EGYPT. "
+                  href="https://maps.app.goo.gl/oNyXX2W6Y2YbH4S66?g_st=ic"
                   target="blank"
                 >
                   <strong>CAMPUS ADDRESS: </strong>
