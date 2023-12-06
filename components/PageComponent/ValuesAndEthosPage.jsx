@@ -161,7 +161,6 @@ function ValuesAndEthosPage({ result }) {
                     <p className="">Empowering</p>
                     <p className="">Reflective</p>
                     <p className="">Ethical</p>
-                    <p className="">Learners’ Attributes</p>
                   </div>
                 </div>
                 <div className="sidebar__text">
