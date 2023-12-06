@@ -61,7 +61,7 @@ function PrimaryStagePage({ result }) {
         }
         title={
           <>
-            Primary <br /> Stage
+            Primary <br /> School
           </>
         }
         color="#65D2DE"

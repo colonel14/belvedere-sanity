@@ -54,7 +54,7 @@ const Navbar = () => {
             href: "/life-and-learning/broad-curriculum/early-years-foundation-stage",
           },
           {
-            title: "Primary Stage",
+            title: "Primary School",
             href: "/life-and-learning/broad-curriculum/primary-stage",
           },
           {
@@ -198,7 +198,7 @@ const Navbar = () => {
             <ul className="app__navbar-bottom_menu">
               <li>
                 <Link
-                  href="/Belvedere School, Cairo _ School Prospectus [Digital].pdf"
+                  href="/Prospectus.pdf"
                   target="blank"
                 >
                   Our prospectus

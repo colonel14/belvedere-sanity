@@ -41,7 +41,7 @@ export const lifeLearningLinks = [
             href: "/life-and-learning/broad-curriculum/early-years-foundation-stage",
           },
           {
-            title: "Primary Stage",
+            title: "Primary School",
             href: "/life-and-learning/broad-curriculum/primary-stage",
           },
           {

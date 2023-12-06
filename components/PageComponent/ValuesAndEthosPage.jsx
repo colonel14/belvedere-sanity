@@ -53,9 +53,9 @@ function ValuesAndEthosPage({ result }) {
           "/values-and-ethos-hero.jpg"
         }
         title={
-          <>
+          <span className="normal-case">
             Values <br /> and Ethos
-          </>
+          </span>
         }
         color="#65D2DE"
       />
@@ -109,7 +109,7 @@ function ValuesAndEthosPage({ result }) {
                 })}
 
                 <div className="keywords">
-                  <span>Resilliance.</span>
+                  <span>Resilience.</span>
                   <span>Balance.</span>
                   <span>Innovation.</span>
                 </div>

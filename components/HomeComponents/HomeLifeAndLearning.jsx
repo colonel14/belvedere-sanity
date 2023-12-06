@@ -11,7 +11,7 @@ function HomeLifeAndLearning() {
             <div className="home__life-heading">
               <span>Life & learning</span>
               <h3>
-                Academic and <br /> Extra Curriculum
+                Academic and <br /> Extracurricular
               </h3>
             </div>
             <p className="main__text">

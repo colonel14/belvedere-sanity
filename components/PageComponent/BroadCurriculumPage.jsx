@@ -44,13 +44,13 @@ function BroadCurriculumPage() {
     },
     {
       image: "/card-img-6.jpg",
-      grade: "Y1 to Y5",
+      grade: "Y1 to Y6",
       title: (
         <>
           <span className="card__link-title-underline after:bg-[#65D2DE]">
             Primary
           </span>{" "}
-          <br /> Stage
+          <br /> School
         </>
       ),
       description:
@@ -96,8 +96,8 @@ function BroadCurriculumPage() {
                 <p className="page__text">
                   The British education system is founded on critical thinking,
                   creativity, and flexibility. At Belvedere School Cairo we
-                  offer a genuinely broad curriculum following the British
-                  National Curricullum, with generous time allocated to music,
+                  offer a genuinely broad curriculum following the English
+                  National Curricullum (ENC), with generous time allocated to music,
                   sport, art, drama and language. Accordingly, learners engage
                   in academic learning, understand how to implement this
                   knowledge in real-life situations, and delve into
