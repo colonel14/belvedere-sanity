@@ -9,16 +9,12 @@ const admissionsList = [
     order: "first",
     icon: "/admission-icon-1.svg",
     color: "#2B52AA",
-    title: "Register Online",
+    title: "Registration",
     body: (
       <>
-        Press on “APPLY NOW” to create your personal account. An email will be
-        sent to you with your log in information and the link to complete the
-        online registration form.
+        Click the “Apply Now“  button to create your account. Your login details will be emailed. Use these details to fill out a Registration Form with a recent photo of your child. 
         <br />
-        <strong>Note:</strong> <br />
-        Currently, registration is only available for FS1, FS2, and Years 1 to
-        5.
+        For the Academic Year 2024/2025 registration is only open for FSI, FSII, Years 1 to 6.
       </>
     ),
   },
@@ -27,20 +23,16 @@ const admissionsList = [
     order: "Second",
     icon: "/admission-icon-2.svg",
     color: "#6AC45B",
-    title: "Pay Assessment Fees",
+    title: "Assessment Fees",
     body: (
       <>
-        Payment details will be sent via email. <br />
-        <strong>Note: </strong>
-        <br />• Assessments fees are EGP 2500 per child. <br /> • Payment must
-        be settled before the assessment date will be announced.
-        <br /> • If the child is accepted, the assessment fees will be deducted
-        from the tuition fees. <br />• If the child is not offered a place, the
-        assessment fees will be refunded, subject to a 20% administrative fee
-        deduction.
-        <br /> • In case of non-acceptance, assessment papers cannot be
-        reviewed, or shared with the parents under any circumstances, to ensure
-        the continued integrity of the admissions process.
+        Pay assessment fees via one of the following payment methods: <br />
+        <br />-	Bank Transfer. 
+        <br /> -	Online Payment 
+        <br /> -	Cash 
+        <br /> -	Visa/Mastercard
+        <br/> 
+        Upon the successful payment of the assessment fees, an assessment time and date will be communicated to both parents via email.
       </>
     ),
   },
@@ -49,12 +41,12 @@ const admissionsList = [
     order: "third",
     icon: "/admission-icon-3.svg",
     color: "#44508D",
-    title: "Attend the Assessment ",
+    title: "Assessment",
     body: (
       <>
-        Once payment is received, we will promptly communicate the assessment
-        time and date for your child via email. This assessment will be tailored
-        to his/her suitable school year group.
+       Applicants applying for <strong>Early Years Foundation Stage (FSI & FSII) will</strong> be assessed to determine the pupil’s non-verbal cognitive abilities and social skills. 
+        Applicants applying for Years 1 to 6 will be assessed in Literacy, Numeracy and Arabic.  
+
       </>
     ),
   },
@@ -66,10 +58,7 @@ const admissionsList = [
     title: "Meet & Greet ",
     body: (
       <>
-        Within 5 working days, shortlisted applicants and both parents will be
-        requested to attend a Meet & Greet with the School Leadership Team.
-        Within 10 working days of the meeting, a formal email will be sent,
-        stating the outcome of the admissions process.
+        After the assessment, a formal email will be sent within 5 working days to shortlisted applicants to set an appointment for both parents and child to meet with the Senior Leadership Team.
       </>
     ),
   },
@@ -81,10 +70,8 @@ const admissionsList = [
     title: "Enrol & Pay ",
     body: (
       <>
-        Secure your child&apos;s place at Belvedere School, Cairo by completing
-        the enrolment procedures. This includes submitting all required official
-        documents and making payment for one term&apos;s tuition fees by the
-        specified deadline.
+        Reserve your child&apos;s place at Belvedere School, Cairo by completing the enrolment procedures, submitting all required official documents and paying the first instalment.
+
       </>
     ),
   },
@@ -106,6 +93,11 @@ function AdmissionProcessPage() {
       <section className="app__section">
         <div className="container">
           <div className="admission__wrapper">
+            <p className="page__text">Welcome to the dynamic and innovative world of education at Belvedere School, Cairo! 
+              We are thrilled to announce that our school is now open for admissions, and have designed a seamless and convenient online application process to ensure that every applicant has an equal opportunity to join our vibrant learning community. Our commitment to nurturing young minds, fostering creativity, and empowering learners to reach their fullest potential makes us the perfect choice for your child&apos;s educational journey. 
+              Get ready to embark on a transformative experience as we invite you to explore our online application form and take the first step towards a future filled with endless possibilities for your child(ren). 
+            </p>
+            <h3 className=" text-blue-600 font-bold mb-5">Admissions Process:</h3>
             <div className="admissions__list">
               {admissionsList.map((item) => (
                 <div
