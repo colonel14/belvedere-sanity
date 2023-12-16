@@ -3,7 +3,6 @@ import RelatedList from "../RelatedList";
 import Image from "next/image";
 import { PortableText } from "../portabletext";
 import { getRelatedList } from "@/lib/client";
-import { format } from "date-fns";
 
 async function NewsDetailsPage({ post: singleNew }) {
   const newsList = await getRelatedList(singleNew.categories[0].title);
@@ -32,7 +31,8 @@ async function NewsDetailsPage({ post: singleNew }) {
                   height={17}
                   alt="calendar icon"
                 />
-                {format(new Date(singleNew._createdAt), "yyyy-MM-dd")}
+                {/* {format(new Date(singleNew._createdAt), "yyyy-MM-dd")} */}
+                {singleNew._createdAt}
               </time>
               <div className="details__page-content">
                 <PortableText value={singleNew.body} />

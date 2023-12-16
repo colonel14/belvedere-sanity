@@ -1,7 +1,6 @@
 import urlFor from "@/lib/urlFor";
 import Image from "next/image";
 import { PortableText } from "../portabletext";
-import { format } from "date-fns";
 
 async function EventDetailsPage({ event: singleEvent }) {
   return (
@@ -26,7 +25,9 @@ async function EventDetailsPage({ event: singleEvent }) {
               height={17}
               alt="calendar icon"
             />
-            {format(new Date(singleEvent._createdAt), "yyyy-MM-dd")}
+            {/* {format(new Date(singleEvent._createdAt), "yyyy-MM-dd")} */}
+            {singleEvent._createdAt}
+
           </time>
           <div className="details__page-content">
             <PortableText value={singleEvent.body} />

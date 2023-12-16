@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { format } from "date-fns";
 import urlFor from "@/lib/urlFor";
 
 function NewsCard({ item, isEvent }) {
+
   return (
     <Link
       href={
@@ -45,7 +45,8 @@ function NewsCard({ item, isEvent }) {
             height={17}
             alt="calendar icon"
           />
-          {format(new Date(item._createdAt), "yyyy-MM-dd")}
+          {/* {format(new Date(item._createdAt), "yyyy-MM-dd")} */}
+          {item._createdAt}
         </time>
       </div>
     </Link>
