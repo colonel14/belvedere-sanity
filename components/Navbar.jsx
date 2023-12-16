@@ -223,7 +223,7 @@ const Navbar = () => {
                   ))}
                   <li>
                     <Link
-                      href="/Belvedere School, Cairo _ School Prospectus [Digital].pdf"
+                      href="/Prospectus.pdf"
                       target="blank"
                     >
                       Our prospectus

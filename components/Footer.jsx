@@ -14,10 +14,10 @@ function Footer() {
                   <Link href="/about-us">About Us</Link>
                 </li>
                 <li>
-                  <Link href="/latest-news">Latest news</Link>
+                  <Link href="/latest-news" className="pointer-events-none">Latest news</Link>
                 </li>
                 <li>
-                  <Link href="/events">Events</Link>
+                  <Link href="/events" className="pointer-events-none">Events</Link>
                 </li>
                 <li>
                   <Link href="/careers">Careers</Link>
@@ -25,7 +25,7 @@ function Footer() {
               </ul>
               <ul className="footer__links-column">
                 <li>
-                  <Link href="/portals">Portals</Link>
+                  <Link href="/portals" className="pointer-events-none">Portals</Link>
                 </li>
                 <li>
                   <Link href="/life-and-learning">Life & learning</Link>

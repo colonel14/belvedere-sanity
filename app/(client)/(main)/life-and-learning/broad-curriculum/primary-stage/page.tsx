@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default async function PrimaryStage() {
-  const result = await getPage("Primary Stage");
+  const result = await getPage("Primary School");
 
   return (
     <main>
