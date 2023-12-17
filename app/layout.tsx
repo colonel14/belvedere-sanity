@@ -1,4 +1,4 @@
-import "../../globals.css";
+import "@/app/globals.css";
 import "@/styles/navbar.css";
 import "@/styles/footer.css";
 import type { Metadata } from "next";
