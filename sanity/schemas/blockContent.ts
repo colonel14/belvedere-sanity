@@ -32,6 +32,18 @@ export default defineType({
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
           {
+            name: "color",
+            type: "object",
+            title: "Color",
+            fields: [
+              {
+                name: "hex",
+                type: "string",
+                title: "Hex Code",
+              },
+            ],
+          },
+          {
             title: "URL",
             name: "link",
             type: "object",

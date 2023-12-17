@@ -6,7 +6,6 @@ import HomeLifeAndLearning from "@/components/HomeComponents/HomeLifeAndLearning
 import Footer from "@/components/Footer";
 import HomeAdmissions from "@/components/HomeComponents/HomeAdmissions";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 async function Home() {
