@@ -12,13 +12,17 @@ import { client } from "./sanity.client";
 
 export async function getPage(title: string) {
   return (
-    (await client.fetch(pagequery, { title }, { next: {revalidate: 30} })) || {}
+    (await client.fetch(
+      pagequery,
+      { title },
+      { next: { revalidate: 3600 } }
+    )) || {}
   );
 }
 
 export async function getPageDynamic(title: string) {
   return (
-    (await client.fetch(pagequery, { title }, {cache: 'no-store'})) || {}
+    (await client.fetch(pagequery, { title }, { cache: "no-store" })) || {}
   );
 }
 
