@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-function MobileMenuItem({ link }) {
+function MobileMenuItem({ link, setToggleMenu }) {
   const [toggleSubMenu, setToggleSubMenu] = useState(false);
 
   return (
@@ -12,7 +12,7 @@ function MobileMenuItem({ link }) {
       className="app__navbar-link"
       onClick={() => setToggleSubMenu((prev) => !prev)}
     >
-      <a>{link.title}</a>
+      <span>{link.title}</span>
       {link.sublinks && <ChevronRight className="next__level-arrow" />}
       {link.sublinks && (
         <div className={`menu__sub ${toggleSubMenu && "active"}`}>
@@ -29,6 +29,7 @@ function MobileMenuItem({ link }) {
                     className={`menu__sub-link ${
                       sublink.isTitle ? "menu__column-title" : ""
                     }`}
+                    onClick={() => setToggleMenu(false)}
                   >
                     <Link href={sublink.href}>{sublink.title}</Link>
                   </li>

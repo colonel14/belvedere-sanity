@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { ChevronRight, Menu, X } from "lucide-react";
 import Link from "next/link";
@@ -197,10 +197,7 @@ const Navbar = () => {
 
             <ul className="app__navbar-bottom_menu">
               <li>
-                <Link
-                  href="/Prospectus.pdf"
-                  target="blank"
-                >
+                <Link href="/Prospectus.pdf" target="blank">
                   Our prospectus
                 </Link>
               </li>
@@ -219,13 +216,14 @@ const Navbar = () => {
                 />
                 <ul className="app__navbar-smallscreen-links">
                   {navigation.map((item, idx) => (
-                    <MobileMenuItem link={item} key={idx} />
+                    <MobileMenuItem
+                      link={item}
+                      key={idx}
+                      setToggleMenu={setToggleMenu}
+                    />
                   ))}
                   <li>
-                    <Link
-                      href="/Prospectus.pdf"
-                      target="blank"
-                    >
+                    <Link href="/Prospectus.pdf" target="blank">
                       Our prospectus
                     </Link>
                   </li>
