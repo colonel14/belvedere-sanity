@@ -2,6 +2,7 @@
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 
 function MobileMenuItem({ link, setToggleMenu }) {
@@ -29,7 +30,6 @@ function MobileMenuItem({ link, setToggleMenu }) {
                     className={`menu__sub-link ${
                       sublink.isTitle ? "menu__column-title" : ""
                     }`}
-                    onClick={() => setToggleMenu(false)}
                   >
                     <Link href={sublink.href}>{sublink.title}</Link>
                   </li>

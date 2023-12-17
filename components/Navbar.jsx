@@ -6,9 +6,15 @@ import { ChevronRight, Menu, X } from "lucide-react";
 import Link from "next/link";
 import MobileMenuItem from "./MobileMenuItem";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const pathname = usePathname();
+  useEffect(() => {
+    setToggleMenu(false);
+  }, [pathname]);
 
   const navigation = [
     {
