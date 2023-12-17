@@ -1,5 +1,3 @@
-"use client";
-
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -31,14 +29,20 @@ function HomeHero() {
               of all learners.
             </p>
             <div className="mt-[30px] flex flex-col md:flex-row items-center justify-center gap-5 gap-y-5">
-              <Link href="https://lms.belvedereschoolcairo.com/en/applicantregister/register" className="app__button !m-0">
+              <Link
+                href="https://lms.belvedereschoolcairo.com/en/applicantregister/register"
+                className="app__button !m-0"
+              >
                 Apply Now <ChevronRight />
               </Link>
-              <Link href="/Prospectus.pdf" className="app__button !m-0" target="blank">
-                 our prospectus <ChevronRight />
+              <Link
+                href="/Prospectus.pdf"
+                className="app__button !m-0"
+                target="blank"
+              >
+                our prospectus <ChevronRight />
               </Link>
             </div>
-            
           </div>
         </div>
       </div>

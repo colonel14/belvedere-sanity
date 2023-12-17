@@ -7,8 +7,6 @@ import dynamic from "next/dynamic";
 // import PreviewProvider from "@/providers/PreviewProvider";
 // import PreviewPage from "@/components/PreviewPage";
 
-export const revalidate = 60;
-
 const OurHistoryPage = dynamic(
   () => import("@/components/PageComponent/OurHistoryPage")
 );

@@ -1,4 +1,6 @@
 import "@/styles/home.css";
+import dynamic from "next/dynamic";
+
 import HomeHero from "@/components/HomeComponents/Hero";
 import Navbar from "@/components/Navbar";
 import HomeHistory from "@/components/HomeComponents/HomeHistory";

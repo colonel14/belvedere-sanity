@@ -1,9 +1,7 @@
-import {  getPageDynamic } from "@/lib/client";
+import { getPageDynamic } from "@/lib/client";
 import "@/styles/single-page.css";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
-
-export const revalidate = 60;
 
 const VisionAndMissionPage = dynamic(
   () => import("@/components/PageComponent/VisionAndMissionPage")
