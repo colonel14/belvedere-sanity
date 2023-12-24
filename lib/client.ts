@@ -11,13 +11,7 @@ import {
 import { client } from "./sanity.client";
 
 export async function getPage(title: string) {
-  return (
-    (await client.fetch(
-      pagequery,
-      { title },
-      { next: { revalidate: 3600 } }
-    )) || {}
-  );
+  return (await client.fetch(pagequery, { title })) || {};
 }
 
 export async function getPageDynamic(title: string) {
