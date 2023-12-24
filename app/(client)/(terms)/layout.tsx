@@ -17,14 +17,12 @@ export default function TermsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <div className="app__terms">
-          <Navbar />
-          {children}
-        </div>
-        <Footer />
-      </body>
-    </html>
+    <>
+      <div className="app__terms">
+        <Navbar />
+        {children}
+      </div>
+      <Footer />
+    </>
   );
 }
