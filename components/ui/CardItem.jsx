@@ -51,7 +51,7 @@ function CardItem({ item }) {
         >
           Learn More
           <span
-            className={`w-11 h-11 rounded border card__link-icon`}
+            className={`w-11 h-11 rounded-full border card__link-icon`}
             style={{
               borderColor: item.color,
               backgroundColor: isHovered ? item.color : "transparent",
