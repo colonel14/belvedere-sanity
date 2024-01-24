@@ -55,9 +55,6 @@ footer {
   row-gap: 0;
 }
 
-.footer__contact-links a strong {
-}
-
 .footer__socials {
   display: flex;
   flex-direction: column;
@@ -106,12 +103,15 @@ footer {
   }
   .footer__contact-links a {
     max-width: 100%;
-    margin: 0 auto;
     justify-content: center;
   }
   .footer__socials {
     margin: 3rem 0 0 0;
     flex-direction: row;
+    justify-content: center;
+  }
+  .footer__contact-links a,
+  .footer__contact-links span {
     justify-content: center;
   }
 }

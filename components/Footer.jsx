@@ -46,16 +46,7 @@ function Footer() {
               child’s application, contact us on any of the following:
             </p>
             <ul className="footer__contact-links">
-              <li>
-                <Link
-                  href="http://maps.google.com/?q=SODIC Eastown, Beside the AUC, Road 90, New Cairo"
-                  target="blank"
-                >
-                  <strong> ADMISSIONS OFFICE: </strong>
-                  SODIC Eastown, Beside the AUC, Road 90, New Cairo - Gate 9 -
-                  Building 4, 4th Floor, Office 04-04-10.
-                </Link>
-              </li>
+             
               <li>
                 <Link
                   href="https://maps.app.goo.gl/oNyXX2W6Y2YbH4S66?g_st=ic"
