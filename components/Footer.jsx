@@ -14,10 +14,14 @@ function Footer() {
                   <Link href="/about-us">About Us</Link>
                 </li>
                 <li>
-                  <Link href="/latest-news" className="pointer-events-none">Latest news</Link>
+                  <Link href="/latest-news" className="pointer-events-none">
+                    Latest news
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/events" className="pointer-events-none">Events</Link>
+                  <Link href="/events" className="pointer-events-none">
+                    Events
+                  </Link>
                 </li>
                 <li>
                   <Link href="/careers">Careers</Link>
@@ -25,7 +29,9 @@ function Footer() {
               </ul>
               <ul className="footer__links-column">
                 <li>
-                  <Link href="/portals" className="pointer-events-none">Portals</Link>
+                  <Link href="/portals" className="pointer-events-none">
+                    Portals
+                  </Link>
                 </li>
                 <li>
                   <Link href="/life-and-learning">Life & learning</Link>
@@ -46,7 +52,6 @@ function Footer() {
               child’s application, contact us on any of the following:
             </p>
             <ul className="footer__contact-links">
-             
               <li>
                 <Link
                   href="https://maps.app.goo.gl/oNyXX2W6Y2YbH4S66?g_st=ic"

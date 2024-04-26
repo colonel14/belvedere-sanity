@@ -12,12 +12,9 @@ export const metadata: Metadata = {
   title: "Careers",
 };
 export default async function Careers() {
-
-  redirect('/')
   return (
     <main>
-      
-      {/* <CareersPage /> */}
+      <CareersPage />
     </main>
   );
 }

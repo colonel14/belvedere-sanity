@@ -26,13 +26,17 @@ function CareersPage() {
               />
             </div>
             <p className="page__text text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              At Belvedere School in Cairo, we are committed to fostering an
+              educational environment where passion meets purpose. Our faculty
+              and staff play a crucial role in shaping the futures of our
+              students, inspiring them to reach their fullest potential. We
+              invite you to join our dynamic team if you&apos;re eager to make a
+              significant impact in a supportive and innovative community. We
+              offer competitive compensation, professional development
+              opportunities, and a vibrant workplace culture that values
+              diversity, creativity, and collaboration. Join us in our mission
+              to provide a world-class education and nurture the leaders of
+              tomorrow.
             </p>
             <div className="mt-20">
               <form>
