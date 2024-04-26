@@ -13,11 +13,14 @@ function Section({ data }) {
   useEffect(() => {
     AOS.init();
   }, []);
+  
 
   return (
     <section className="app__section">
       <div className="container">
         <div className="app__section-inner">
+          
+
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-12">
             <div className="col-span-8 app__section-left">
               <div data-aos="fade-animation" data-aos-duration="700">
