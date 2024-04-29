@@ -10,7 +10,7 @@ function PageHero({ imageSrc, color, title, data, query }) {
               src={imageSrc || "/hero-1.jpg"}
               fill
               alt="hero image"
-              unoptimized
+              sizes="100vw"
               className="object-cover"
               loading="eager"
               priority

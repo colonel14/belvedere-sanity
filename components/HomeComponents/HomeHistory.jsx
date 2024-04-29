@@ -33,7 +33,11 @@ function HomeHistory() {
               Teacher training will be conducted under the guidance of Belvedere
               School UK to maintain the same level of teaching and learning.
             </p>
-            <Link href="/about-us/our-history" className="section__button">
+            <Link
+              href="/about-us/our-history"
+              aria-label="Learn more about our history"
+              className="section__button"
+            >
               Learn More
               <span className={`w-11 h-11 rounded border section__button-icon`}>
                 <ChevronRight />
@@ -45,6 +49,7 @@ function HomeHistory() {
               src="/history-placeholder.jpg"
               className="object-cover"
               fill
+              sizes="100%"
               alt="history placeholder"
             />
           </div>

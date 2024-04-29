@@ -5,15 +5,15 @@ import React from "react";
 
 function HomeHero() {
   return (
-    <div className="home__hero">
+    <div className="home__hero ">
       <Image
         src="/home-hero.jpg"
         fill
+        sizes="100vw"
         className="home__hero-img object-cover"
         alt="hero image"
         loading="eager"
         priority={true}
-        unoptimized
       />
       <div className="container">
         <div className="home__hero-inner">
@@ -32,6 +32,7 @@ function HomeHero() {
               <Link
                 href="https://lms.belvedereschoolcairo.com/en/applicantregister/register"
                 className="app__button !m-0"
+                aria-label="Apply Now"
               >
                 Apply Now <ChevronRight />
               </Link>
@@ -39,6 +40,7 @@ function HomeHero() {
                 href="/Prospectus.pdf"
                 className="app__button !m-0"
                 target="blank"
+                aria-label="Our prospectus"
               >
                 our prospectus <ChevronRight />
               </Link>

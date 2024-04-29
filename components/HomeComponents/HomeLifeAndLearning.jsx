@@ -25,7 +25,11 @@ function HomeLifeAndLearning() {
               flexibility, is vital.
             </p>
 
-            <Link href="/life-and-learning" className="section__button">
+            <Link
+              href="/life-and-learning"
+              aria-label="learn more about life and learning"
+              className="section__button"
+            >
               Learn More
               <span className={`w-11 h-11 rounded border section__button-icon`}>
                 <ChevronRight />
