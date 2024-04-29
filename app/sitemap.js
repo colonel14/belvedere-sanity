@@ -1,5 +1,3 @@
-import { categories } from "@/constants";
-
 const STATIC_LINKS_SITEMAP = [
   "https://belvedereschoolcairo.com",
   "https://belvedereschoolcairo.com/about-us",
